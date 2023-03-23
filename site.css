@@ -1,0 +1,258 @@
+*{
+	box-sizing: border-box;
+}
+
+body{
+	margin: 0;
+	overflow-x: hidden;
+	font-family: Ruberoid;
+	background: linear-gradient(63.73deg, rgba(78, 149, 207, 0.12) 17.4%, rgba(254, 1, 122, 0.12) 55.91%, rgba(242, 232, 255, 0.12) 89.13%);
+}
+
+a{
+	text-decoration: none; 
+	color: black;
+}
+a:hover{
+	text-decoration: underline;
+}
+
+button{
+	border-style: none;
+	background: none;
+	border: 0.1vw solid #A464FF;
+	border-radius: 0.3vw;
+	transition: 0.5s;
+	padding-left: 0.8vw;
+	padding-right: 0.8vw;
+	padding-top: 0.2vw;
+	padding-bottom: 0.2vw;
+}
+button:hover{
+	background: #A464FF;
+	color: white;
+}
+
+/* Контейнер */
+.container{
+	width: 70vw;
+
+	margin: 0 auto;;
+}
+
+/* Шапка */
+.header{
+	width: 100%;
+	height: 7vh;
+
+	z-index: 10;
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: white;
+}
+
+.headWrapper{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: auto 8.4vw 5.8vw 5.8vw 9.5vw 11vw 7.5vw 19.7vw auto;
+	gap: 0 2.7vw;
+	align-content: center;
+}
+
+.logo{
+	height: 6vh;
+
+	margin-top: auto;
+	margin-bottom: auto;
+}
+
+.hsh{
+	background: linear-gradient(89.92deg, #FB047C -7.2%, #FDB603 121.45%);
+	color: transparent;
+	-webkit-background-clip: text;
+}
+
+/* Тело */
+.back{
+	z-index: -10; 
+	position: absolute; top: 0; 
+	width: 100%; 
+	box-shadow: 0 4vh 4vh #F2E9FF;
+}
+
+.mainImg{
+	height: 30vw;
+	width: 100%;
+	background-image: url("imgs/mainImg.png");
+	background-size: 100% 100%;
+	box-shadow: 0 1vh 30vh #4F96D0;
+}
+
+@keyframes runningstroke{
+	from {
+		margin-left: -86.8vw;
+	}
+	to {
+		margin-left: 0;
+	}
+}
+.runningStroke{
+	height: 100%;
+	animation: runningstroke infinite 14s linear;
+	z-index: 1;
+}
+.imgCont{
+	overflow: hidden;
+	width: 100%;
+	height: 7vh;
+	margin-top: 6vh;
+	margin-bottom: 6vh;
+}
+
+main{
+	margin-top: 7vh;
+	padding-bottom: 10vh;
+}
+
+.threeInfo{
+	height: 15vh;
+	width: 100%;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.theInfo{
+	height: 100%;
+	width: 100%;
+}
+
+.next, .prev{
+	height: 50px;
+	width: 50px;
+	border-radius: 25px;
+	background: salmon;
+}
+.next{
+	background: blue;
+}
+.prev{
+	background: red;
+}
+
+.Block{
+	width: 100%;
+	height: 60vh;
+	margin-top: 6vh;
+}
+
+.newsWrapper{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(12, 1fr);
+	grid-template-rows: 60% 30%;
+	gap: 1vw 1vw;
+	padding-bottom: 2vw;
+}
+.news{
+	height: 100%;
+	width: 100%;
+	border-radius: 1vw;
+	background: white;
+}
+.n1{
+	grid-column: 1 / span 6;
+	grid-row: 1 / 2;
+}
+.n2{
+	grid-column: 7 / span 6;
+	grid-row: 1 / 2;
+}
+.n3{
+	grid-column: 1 / span 5;
+	grid-row: 2 / 3;
+}
+.n4{
+	grid-column: 6 / span 5;
+	grid-row: 2 / 3;
+}
+.n5{
+	grid-column: 11 / span 2;
+	grid-row: 2 / 3;
+}
+
+.eventsWrapper{
+	height: 100%;
+	width: 100%;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	grid-template-rows: repeat(4, 25%);
+	gap: 1vw 1vw;
+	padding-bottom: 2vw;
+}
+.event{
+	height: 100%;
+	width: 100%;
+	border-radius: 1vw;
+	background: white;
+}
+.e1{
+	grid-column: 1 / span 2;
+	grid-row: 1 / 5;
+}
+.e2{
+	grid-column: 3 / span 2;
+	grid-row: 1 / 3;
+}
+
+.e3{
+	grid-column: 3 / span 1;
+	grid-row: 3 / 5;
+}
+.e4{
+	grid-column: 4 / span 1;
+	grid-row: 3 / 4;
+}
+
+
+
+
+/* Поиск людей */
+.box4swap{
+	margin: 0 auto;
+	width: 20vw;
+}
+
+.swapBoxes{
+	height: 40vh;
+	width: 20vw;
+
+	position: absolute;
+	left: auto;
+	right: auto;
+
+	cursor: grab;
+}
+
+.like, .dislike {
+	height: 100vh;
+	width: 50vw;
+
+	width: auto;
+	position: absolute;
+}
+
+.like{
+	right: 0;
+}
+
+.dislike{
+	left: 0;
+}
+
+@font-face {
+	font-family: "Ruberoid";
+	src: url(fonts/Ruberoid-Regular.ttf);
+}
