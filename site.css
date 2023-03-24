@@ -4,9 +4,9 @@
 
 body{
 	margin: 0;
+	padding: 0;
 	overflow-x: hidden;
 	font-family: Ruberoid;
-	background: linear-gradient(63.73deg, rgba(78, 149, 207, 0.12) 17.4%, rgba(254, 1, 122, 0.12) 55.91%, rgba(242, 232, 255, 0.12) 89.13%);
 }
 
 a{
@@ -21,6 +21,7 @@ a:hover{
 	border-style: none;
 	background: none;
 	border: 0.1vw solid #A464FF;
+	color: #A464FF;
 	border-radius: 0.3vw;
 	transition: 0.5s;
 	padding-left: 0.8vw;
@@ -31,6 +32,46 @@ a:hover{
 .button:hover{
 	background: #A464FF;
 	color: white;
+}
+.button2{
+	border-style: none;
+	background: #A464FF;
+	color: white;
+	border-radius: 0.8vw;
+	transition: 0.5s;
+	padding-left: 4vw;
+	padding-right: 4vw;
+	padding-top: 0.2vw;
+	padding-bottom: 0.2vw;
+	height: 5vh;
+	font-weight: 700;
+	margin-left: 25vw;
+	border: 0.1vw solid transparent;
+}
+.button2:hover{
+	background: #842EFF;
+}
+.button3{
+	border-style: none;
+	background: none;
+	color: #3A89C9;
+	border-radius: 0.8vw;
+	transition: 0.5s;
+	padding-left: 3.2vw;
+	padding-right: 3.2vw;
+	padding-top: 0.2vw;
+	padding-bottom: 0.2vw;
+	height: 5vh;
+	font-weight: 700;
+	margin-left: 25vw;
+	margin-top: 1vw;
+	border: 0.1vw solid #3A89C9;
+}
+.button3:hover{
+	box-shadow: 0 0 0.6vw 0.1vw #3A89C9;
+}
+.cVid{
+	margin-left: 28vw;
 }
 
 /* Контейнер */
@@ -297,38 +338,11 @@ footer{
 	margin-bottom: auto;
 }
 
-
-/* Поиск людей */
-.box4swap{
-	margin: 0 auto;
-	width: 20vw;
-}
-
-.swapBoxes{
-	height: 40vh;
-	width: 20vw;
-
-	position: absolute;
-	left: auto;
-	right: auto;
-
-	cursor: grab;
-}
-
-.like, .dislike {
-	height: 100vh;
-	width: 50vw;
-
-	width: auto;
-	position: absolute;
-}
-
-.like{
-	right: 0;
-}
-
-.dislike{
-	left: 0;
+.intregBlock{
+	width: 50%;
+	height: 100%;
+	background: white;
+	margin: 0;
 }
 
 @font-face {
