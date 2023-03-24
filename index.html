@@ -22,9 +22,9 @@
 			<a href="#4organisators" class=""><p>Организаторам</p></a>
 			<p class="hsh">#SAMEET</p>
 
-			<div style="50%">
-				<a href="login.html"><button>Вход</button></a>
-				<a href="registration.html"><button>Зарегестрироваться</button></a>	
+			<div style="height: 50%; margin-top: auto; margin-bottom: auto;">
+				<a href="login.html"><button class="button">Вход</button></a>
+				<a href="registration.html"><button class="button">Зарегестрироваться</button></a>	
 			</div>
 			<div></div>
 		</div>
@@ -39,45 +39,83 @@
 
 		<div class="container ">
 			<div class=" threeInfo">
-				<div style="display: block;" class="theInfo">
-					<div class="prev" style="display: none;"></div>
-					Инфа1 
-					<div class="next"></div>
+
+				<div style="left: 0; z-index: 10; display: flex; background: linear-gradient(90.08deg, #FE017A 1.39%, #FDB603 91.98%, rgba(186, 77, 224, 0.28) 185.26%);" class="theInfo">
+					<img src="imgs/arrow.png" class="prev" style="visibility: hidden;"/>
+					<p class="Itext">Познакомиться с ближайшими <br> единомышленниками, по вашим интересам</p>
+					<button class="join">Присоединиться</button>
+					<img src="imgs/arrow.png" class="next"/>
+					<div class="whImg1"></div>
+					<div class="whImg2"></div>
 				</div>
-				<div style="display: none;" class="theInfo">
-					<div class="prev"></div>
-					Инфа2
-					<div class="next"></div>
+
+				<div style="right: -70vw; z-index: 11; display: flex; background: linear-gradient(90deg, #4992CE 1.31%, #FE017A 98.11%, #FEB600 148.33%);" class="theInfo">
+					<img src="imgs/arrow.png" class="prev"/>
+					<p class="Itext">Станем еще ближе! <br> Присоединяйся к нам ВКонтакте</p>
+					<button class="join">Присоединиться</button>
+					<img src="imgs/arrow.png" class="next" style="visibility: hidden;"/>
+					<div class="whImg1"></div>
+					<div class="whImg2"></div>
 				</div>
-				<div style="display: none;" class="theInfo">
-					<div class="prev"></div>
-					Инфа3
-					<div class="next" style="display: none;"></div>
-				</div>
+
 			</div>
 
-			<div class="Block" id="news">
+			<div class="Block" id="news" style="height: 80vh;">
 				<h1>Новости</h1>
 				<div class="newsWrapper">
-					<div class="news n1 "></div>
-					<div class="news n2 "></div>
-					<div class="news n3 "></div>
-					<div class="news n4 "></div>
-					<div class="news n5 "></div>
+					<div class="news n1 ">
+						<img style="width: 100%;" src="imgs/news1.png" alt="" class="nImg">
+						<p class="nText">В течение трех дней с 17 по 19 марта в Санкт- <br> Петербурге в бизнес-инкубаторе «Ингрия» прошел <br> хакатон «Будущее Якутии. Креативные технологии». <br> Одним из организаторов выступила СПбОО «Сайдыы».</p>
+					</div>
+					<div class="news n2 ">
+						<img style="width: 100%;" src="imgs/news2.png" alt="" class="nImg">
+						<p class="nText">19 марта на территории спортивного комплекса <br> «Олимпийская деревня – 80» состоялся V <br> Межнациональный молодёжный волейбольный турнир <br> «Кубок «МДН»</p>
+					</div>
+					<div class="news n3">
+						
+					</div>
+					<div class="news n4" style="display: flex;">
+						<img style="height: 100%;" src="imgs/news4.png" alt="" class="nImg">
+						<p class="nText">Зимний бал МОД <br> "АйТал" 2022 – это <br> традиционное <br> мероприятие, которое <br> проводится уже много <br> лет и каждый раз <br> остается в сердцах <br> студенческой <br> молодежи!</p>
+					</div>
+					<div class="news n5 ">
+
+					</div>
 				</div>
 			</div>
 
-			<div class="Block" id="events">
+			<div class="Block" id="events" style="height: 70vh;">
 				<h1>Мероприятия рядом с вами</h1>
 				<div class="eventsWrapper">
-					<div class="event e1 "></div>
-					<div class="event e2 "></div>
-					<div class="event e3 "></div>
+					<div class="event e1 ">
+						<img style="width: 100%;" src="imgs/event1.png" alt="" class="nImg">
+						<p class="nText">форум для разработчиков, во время <br> которого специалисты из разных <br> областей разработки программного <br> обеспечения (программисты, дизайнеры, <br> менеджеры) сообща решают какую-либо <br> проблему на время.</p>
+					</div>
+					<div class="event e2" style="display: flex;">
+						<img style="height: 100%;" src="imgs/event2.png" alt="" class="nImg">
+						<p class="nText">Отбор на обучающую <br> стажировку <br> на базе Костромского <br> отделения <br> "Специальная <br> Олимпиада России"...</p>
+					</div>
+					<div class="event e3 ">
+						<img style="width: 100%;" src="imgs/event3.png" alt="" class="nImg">
+						<p class="nText" style="font-size: 0.7vw;">Скоро весна! Просыпайтесь и <br> встречайте это чудесное <br> время года вместе с нами в <br> Сайдыы. <br> В эту пятницу, 3 февраля, <br> состоится еженедельное собрание.</p>
+					</div>
 					<div class="event e4 "></div>
 				</div>
 			</div>
 		</div>
 	</main>
+
+	<footer>
+		<div class="limgWrapper"><img class="logo2" src="imgs\Logo.png" alt=""></div>
+	</footer>
+		<div class="niz">
+			<div style="text-align: left; width: 30vw; margin-left: 3vw; margin-right: auto;"><p>Служба поддержки: <br> +7(914)262-00-87</p></div>
+			<div class="iconsWrapper">
+				<img class="lIcons" src="imgs\vk.png" alt="">
+				<img class="lIcons" src="imgs\teleg.png" alt="">
+			</div>
+			<div style="text-align: right; width: 30vw; margin-right: 3vw; margin-left: auto;"><a style="color: #666768;"><p>Политика конфиденциальности</p></a></div>
+		</div>
 
 
 <script src="site.js"></script>

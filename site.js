@@ -4,12 +4,12 @@ let prev = document.querySelectorAll('.prev');
 
 for(let i=0; i<next.length; i++){
     next[i].onclick = function(){
-        theInfo[i].style.display = 'none';
-        theInfo[i+1].style.display = 'block';
+        theInfo[i].style.left = "-70vw";
+        theInfo[i+1].style.right = 0;
     }
     prev[i].onclick = function(){
-        theInfo[i].style.display = 'none';
-        theInfo[i-1].style.display = 'block';
+        theInfo[i].style.right = "-70vw";
+        theInfo[i-1].style.left = 0;
     }
 }
 
